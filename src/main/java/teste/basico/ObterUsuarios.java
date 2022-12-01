@@ -16,7 +16,7 @@ public class ObterUsuarios {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpa-udemy1");
 		EntityManager em = emf.createEntityManager();
 		
-		String jpql = "select u from Usuario u where nome = 'Daniel'";
+		String jpql = "select u from Usuario u";
 		
 		TypedQuery<Usuario> query = em.createQuery(jpql, Usuario.class);
 		List<Usuario> usuarios = query.getResultList();
