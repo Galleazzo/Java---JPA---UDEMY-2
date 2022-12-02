@@ -12,7 +12,6 @@ import javax.persistence.Table;
 public class Produto {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
 	@Column(name = "prod_nome", length = 200, nullable = false)
